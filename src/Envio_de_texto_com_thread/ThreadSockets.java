@@ -16,7 +16,7 @@ public class ThreadSockets extends Thread{
 			//1 - Definir stream de entrada de dados no servidor
 			DataInputStream entrada = new DataInputStream(socket.getInputStream());
 			String mensagem = entrada.readUTF();//Recebendo mensagem em Minuscolo do Cliente
-			Strinf novaMensagem = mensagem.toUpperCase(); //Converter em Maiusculo
+			String novaMensagem = mensagem.toUpperCase(); //Converter em Maiusculo
 			
 			//2 - Definir stream de saida de dados do servidor
 			DataOutputStream saida = new DataOutputStream(socket.getOutputStream());

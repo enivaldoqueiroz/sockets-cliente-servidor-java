@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 
-public class Cliente {
+public class Cliente2 {
 
 	public static void main(String[] args) throws IOException {
 		//1 - Abrir conexão 
@@ -14,7 +14,7 @@ public class Cliente {
 		
 		//2 - Definir streamde saída de dados do cliente
 		DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-		saida.writeUTF("Enivaldo Queiroz"); // Enviar mensagem em minusculo para o servidor
+		saida.writeUTF("Enivaldo"); // Enviar mensagem em minusculo para o servidor
 		
 		//3 - Definir stream de entrada de dados no cliente
 		DataInputStream entrada = new DataInputStream(socket.getInputStream());
