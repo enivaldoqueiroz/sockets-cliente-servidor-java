@@ -1,2 +1,2 @@
-# sockets-cliente-servidor-java
-Programação para Sistemas Distribuidos - Sockets (TCP): Códigos em Java
+# Sockets cliente-servidor para em Java
+## Programação para Sistemas Distribuidos - Sockets (TCP): Códigos em Java
