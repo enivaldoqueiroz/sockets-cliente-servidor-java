@@ -27,27 +27,6 @@ public class Servidor {
 			
 		}
 		
-		
-		
-		
-		
-		/*//3 - Definir streams de entada de dados
-		DataInputStream entrada = new DataInputStream(socket.getInputStream());
-		String mensagem = entrada.readUTF();//receber mensagem em minusculo do cliente
-		String novaMensagem = mensagem.toUpperCase(); //converte mensagem em maiusculo
-		
-		//4 - Definir streams de saida de dados
-		DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-		saida.writeUTF(novaMensagem); //Enviar mensagem em minusculo para cliente
-		
-		//5 - Fechar streams
-		entrada.close();
-		saida.close();
-		
-		//6 - Fechar sockets de conexão e comunicação
-		socket.close();
-		serverSocket.close();
-		*/
 	}
 
 }
