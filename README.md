@@ -5,7 +5,9 @@
 ### 2 - Sockets(TCP): Código - Envio de texto com Thread
 ### 3 - Sockets(TCP): Código - Envio de objeto
 
-//Nº randomico a ser sorteado de 0 a 10
+## 
+
+			//Nº randomico a ser sorteado de 0 a 10
 			int num = random.nextInt(10);
 					
 			//Condiconal para verificar o sorteio do cliente ganhador	
