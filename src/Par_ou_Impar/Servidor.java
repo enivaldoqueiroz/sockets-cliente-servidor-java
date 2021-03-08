@@ -10,7 +10,7 @@ public class Servidor {
 
 	public static void main(String[] args) throws IOException{
 		//1 - Definir o serverSocket (abrir porta de conexão)
-		ServerSocket serverSocket = new ServerSocket(54340);
+		ServerSocket serverSocket = new ServerSocket(54345);
 		System.out.println("A porta 54321 foi aberta!");
 		System.out.println("Servidor esperando reveber mensagem de cliente...");
 		

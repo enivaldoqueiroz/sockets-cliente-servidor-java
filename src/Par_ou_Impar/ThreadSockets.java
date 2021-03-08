@@ -22,31 +22,13 @@ public class ThreadSockets extends Thread{
 			//2 - Definir stream de saida de dados do servidor
 			Random random = new Random();
 			
+			//Nº randomico a ser sorteado de 0 a 10
 			int num = random.nextInt(10);
-			
-			/*if(num % 2 == 0 && mensagem == "Par") {
-				DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-				saida.writeUTF(novaMensagem + " Par ganhou!!! " + num); //Enviando mensagem em Maiuscula para CLiente
-				//System.out.println("Par ganhou!!!");
-
-				//3 - Fechar streams de entrada e saida de dados
-				entrada.close();
-				saida.close();
-			}else if (num % 2 != 0 && mensagem == "Impar"){
-				DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-				saida.writeUTF(novaMensagem + " Impar ganhou!!! " + num); //Enviando mensagem em Maiuscula para CLiente
-				//System.out.println("Impar ganhou!!!");
-				//3 - Fechar streams de entrada e saida de dados
-				entrada.close();
-				saida.close();
-				
-			}*/
-			
-			
-				
-				if(num % 2 == 0) {
+					
+			//Condiconal para verificar o sorteio do cliente ganhador	
+			if(num % 2 == 0) {
 					DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-					saida.writeUTF(novaMensagem + " Quem ficou com PAR ganhou!!! " + "O Nº sorteado foi " + num);
+					saida.writeUTF("Cliente que escolheu " + novaMensagem + " - Quem ficou com PAR ganhou!!! " + "O Nº sorteado foi " + num);
 				
 
 				//3 - Fechar streams de entrada e saida de dados
@@ -54,7 +36,7 @@ public class ThreadSockets extends Thread{
 				saida.close();
 			}else if (num % 2 != 0){
 				DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
-				saida.writeUTF(novaMensagem + " Quem ficou com IMPAR ganhou!!! " + "O Nº sorteado foi " + num);
+				saida.writeUTF("Cliente que escolheu " + novaMensagem + " - Quem ficou com IMPAR ganhou!!! " + "O Nº sorteado foi " + num);
 				
 				//3 - Fechar streams de entrada e saida de dados
 				entrada.close();

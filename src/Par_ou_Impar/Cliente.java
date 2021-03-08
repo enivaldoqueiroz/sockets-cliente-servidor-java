@@ -10,7 +10,7 @@ public class Cliente {
 
 	public static void main(String[] args) throws IOException {
 		//1 - Abrir conexão 
-		Socket socket = new Socket("127.0.0.1",54340);
+		Socket socket = new Socket("127.0.0.1",54345);
 		
 		//2 - Definir streamde saída de dados do cliente
 		DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
