@@ -6,7 +6,7 @@
 ### 3 - Sockets(TCP): Código - Envio de objeto
 
 ### 4 - Sockets(TCP): Código - Jogo Par ou Impar ultilizando socket com Thread
-
+```
 			//Nº randomico a ser sorteado de 0 a 10
 			int num = random.nextInt(10);
 					
@@ -28,3 +28,4 @@
 				saida.close();
 				
 			}
+```
